@@ -1,7 +1,7 @@
 body {
     background-color:#c1b1ca;
     background-image: url("sailor-moon.jpg");
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Print Clearly', sans-serif;
     margin: 0;
     display: flex;
@@ -20,6 +20,7 @@ body {
 }
 
 .qg_top {
+    font-size: 18px;
     background-color: rgb(34, 12, 34);
     color: white;
     display: flex;
@@ -28,9 +29,20 @@ body {
     border-radius: 15px 15px 0 0;
     justify-content: space-between;
 }
+.qg_top1 {
+    font-size: 18px;
+    background-color: rgb(34, 12, 34);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+   
+}
 .questions {
     display: none;
-    font-family: 'Print Bold', sans-serif;
+    font-weight: bolder;
 
 }
 .questions.active {
@@ -91,5 +103,15 @@ body {
     transition: all 0.3s ease-out;
 }
 .button:hover {
-    background-color: rgb(253, 142, 179);
+    background-color: rgb(253, 159, 190);
+}
+.strt_button {
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: rgb(34, 12, 34);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 }
