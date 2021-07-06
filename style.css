@@ -40,12 +40,15 @@ body {
     border-radius: 15px 15px 0 0;
    
 }
+.qg_body1 {
+    font-size: 16px;
+}
 .questions {
     display: none;
     font-weight: bolder;
 
 }
-.questions.active {
+.questions-active {
     display: block;
 }
 .questions h3 {
