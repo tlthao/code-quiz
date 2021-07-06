@@ -3,7 +3,7 @@ body {
     background-image: url("sailor-moon.jpg");
     font-size: 18px;
     margin: 0;
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     min-height: 100vh;
@@ -17,3 +17,33 @@ body {
     border-radius: 15px;
 }
 
+.qg_top {
+    background-color: rgb(34, 12, 34);
+    color: white;
+    display: flex;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+    justify-content: space-between;
+}
+.questions {
+    display: none;
+}
+
+.questions input {
+
+}
+
+.questions h3 {
+    margin: 0 0 15px;
+    font-size: 22px;
+
+}
+.qg_body {
+
+}
+
+.qg_bottom {
+display: flex;
+justify-content: flex-end;
+}
