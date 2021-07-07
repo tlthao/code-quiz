@@ -1,14 +1,22 @@
-var next = document.getElementById("next");
-var score = document.getElementById("score");
-var totalScore = document.getElementById("totalScore");
-var countdown = document.getElementById("countdown");
-var count = 0;
-var scoreCount = 0;
-var timer = 60;
-var questions = document.querySelectorAll(".questions");
-var answers = document.querySelectorAll(".questions .answers input");
+/*game timer*/
 
-next.addEventListener('click', function(){
+setTimeout(timer, 0);
 
-})
+var i = 60;
+var startTime = document.getElementById('count-down');
 
+function timer() {
+  setInterval(decrease, 1000);
+}
+function decrease() {
+    if (i >= 1) {
+      i--;
+      startTime.innerText = i; 
+    }
+  
+}
+
+
+function next() {
+    
+}

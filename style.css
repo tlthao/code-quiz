@@ -9,7 +9,10 @@ body {
     justify-content: space-around;
     min-height: 100vh;
 }
-
+#count-down {
+    color: white;
+    font-family: 'Print Clearly', sans-serif;
+}
 .qg_box {
     width: 500px;
     padding: 20px;
@@ -48,7 +51,7 @@ body {
     font-weight: bolder;
 
 }
-.questions-active {
+.questions-1 {
     display: block;
 }
 .questions h3 {
