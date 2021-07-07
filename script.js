@@ -16,7 +16,3 @@ function decrease() {
   
 }
 
-
-function next() {
-    
-}
