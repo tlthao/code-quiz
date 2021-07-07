@@ -13,7 +13,7 @@ body {
     color: white;
     font-family: 'Print Clearly', sans-serif;
 }
-.qg_box {
+.qg_box1,.qg_box2 {
     width: 500px;
     padding: 20px;
     min-height: 100px;
@@ -47,8 +47,7 @@ body {
     font-size: 16px;
 }
 .questions {
-    display: none;
-    font-weight: bolder;
+    display: none; 
 
 }
 .questions-1 {
@@ -87,8 +86,18 @@ body {
 
 .answers input:checked + span {
     background-color: rgb(255, 57, 43);
+    border-style: double;
 }
 .answers input[valid]:checked + span {
+    background-color: rgb(113, 218, 113);
+    border-style: double;
+    color: white;
+}
+
+.answers input:disabled + span {
+    background-color: rgb(255, 57, 43);
+}
+.answers input[valid]:disabled + span {
     background-color: rgb(113, 218, 113);
     color: white;
 }

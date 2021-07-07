@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "style.css">
     <link href="http://fonts.cdnfonts.com/css/print-clearly" rel="stylesheet">
-    <title>Start</title>
+    <title>Coding Quiz Game</title>
 </head>
 <body>
 
-    <div class = "qg_box">
+    <div class = "qg_box1">
 
         <div class = "qg_top1">
             <span><b>CODING QUIZ GAME!</b></span>
@@ -31,12 +31,138 @@
             <b>Good luck!</b></p>
         </div>
         
-        <div class = "qg_bottom" style = "text-align: center;">
-            <form action = "index1.html">
-            <button class = "strt_button" id = "start" onclick="decrease()">START</a>
-            </form>
+        <div class = "qg_bottom1" style = "text-align: center;">
+            
+            <button class = "strt_button" id = "start">START</button>
+            
         </div>
-        
+    </div>
+    <div class = "qg_box2 questions">
+        <div class = "qg_top">
+            <span><b>Score:</b> <span id = "score">0</span></span>
+            <span><b>Timer:</b> <span id = "count-down">60</span></span>
+        </div>
+
+        <div class = "qg_body">
+            <!--Question 1-->
+            <div class = "questions" id = "q1">
+                <h3>The condition in an <i>if</i> statement is enclosed within:</h3>
+                <div class = "answers ">
+                    <input type = "radio" class = "a1">
+                   <span>Quotes " "</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" class = "a1">
+                   <span>Curly Brackets { }</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" class = "a1" valid = "correct">
+                    <span>Parentheses ( )</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" class = "a1">
+                    <span>Square Brackets [ ]</span>
+                </div>
+            </div>
+            <!--Question 2-->
+            <div class = "questions" id="q2">
+                <h3>Commonly used data types DO NOT include:</h3>
+                <div class = "answers">
+                    <input type = "radio" name = "a2">
+                    <span>Strings</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a2">
+                    <span>Booleans</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a2" valid = "correct">
+                    <span>Alerts</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a2">
+                    <span>Numbers</span>
+                </div>
+            </div>    
+            <!--Question 3-->
+            <div class = "questions" id="q3">
+                <h3>Arrays in Javascript can be used to store:</h3>
+                <div class = "answers">
+                    <input type = "radio" name = "a3">
+                    <span> Numbers and Strings</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a3">
+                    <span>Other Arrays</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a3">
+                    <span>Booleans</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a3" valid = "correct">
+                    <span>All of the above</span>
+                </div>
+            </div>    
+            <!--Question 4-->
+            <div class = "questions" id="q4">
+                <h3>A very useful tool during development and debugging for printing content to the debugger is:</h3>
+                <div class = "answers">
+                    <input type = "radio" name = "a4">
+                    <span>Javascript</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a4">
+                    <span>Terminal/Bash</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a4" valid = "correct">
+                    <span>console.log</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a4">
+                    <span><i>for</i> Loops</span>
+                </div>
+            </div>    
+            <!--Question 5-->
+            <div class = "questions" id="q5">
+                <h3>String Values must be enclosed within ____ when being assigned to variables:</h3>
+                <div class = "answers">
+                    <input type = "radio" name = "a5">
+                    <span>Commas ,</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a5"  valid = "correct">
+                    <span>Quotes ""</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a5">
+                    <span>Curly Brackets { }</span>
+                </div>
+                <div class = "answers">
+                    <input type = "radio" name = "a5">
+                    <span>Parentheses ( )</span>
+                </div>
+            </div>
+            <ol class = "scoreboard"></ol>
+            <div class = "questions" id = "end">
+                <h3>Your total score: <span id ="totalScore">0</span></h3>
+            </div> 
+            <div class = "high_score questions">
+                <input type = "text" class = "initials">
+                <button id = "submit">Submit</button>
+
+            </div>
+        </div>
+        <div class = "qg_bottom">
+               
+            <button class = "button" id = "next" disabled>NEXT</button>
+        </div>
+        <div class = "questions" id = "goback">
+       
+            <button id="goback_btn">GO BACK</button>
+     
+        </div>
         
     </div>
 
@@ -49,7 +175,7 @@
 
 
 
-<script src = "script.js"></script>
+
 
 </body>
 </html>
