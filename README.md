@@ -1,5 +1,5 @@
 
-# code-quiz-week4
+Coding Quiz Game
 
 ![Code-Quiz-Picture](https://user-images.githubusercontent.com/50894080/125025603-d1a4e580-e037-11eb-9505-6953104580de.jpg)
 
