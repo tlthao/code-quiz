@@ -8,7 +8,7 @@ $(document).ready(function(){
 
  
 
-var totalTime = 60;
+var totalTime = 120;
 var startTime = document.getElementById('count-down');
 
 
@@ -120,7 +120,7 @@ $(".scoreboard").removeClass("questions")
     clearInterval(timer)
     quesArray = ["q1", "q2", "q3", "q4", "q5"];
     score = 0;
-    totalTime = 60;
+    totalTime = 120;
     firstQues = Math.floor(Math.random() * quesArray.length);
     currentQues = firstQues;
     $(".scoreboard").addClass("questions")
