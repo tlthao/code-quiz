@@ -18,4 +18,4 @@ WHEN the game is over<br>
 THEN I can save my initials and my score<br>
 
 Experience:<br>
-This was an extremely hard assignment. I learned to use a lot of JQuery and there was a lot of trial and error to make my code work. Overal, I learned a lot about the logic for javascript.
+This was an extremely hard assignment. I learned to use a lot of JQuery and there was a lot of trial and error to make my code work. Overall, I learned a lot about the logic for javascript. 
