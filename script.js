@@ -5,12 +5,9 @@ $(document).ready(function(){
   var currentQues = firstQues;
   var score = 0;
   var highScores = [];
-
- 
-
-var totalTime = 120;
-var startTime = document.getElementById('count-down');
-
+  var totalTime = 90;
+  var startTime = document.getElementById('count-down');
+  var totalScore = document.getElementById('totalScore');
 
  
 var timer = setInterval(decrease, 1000);
@@ -52,9 +49,10 @@ $("#start").click(function(){
   }
   else {
 
-    totalTime -= 12;
+    totalTime -= 20;
   }
   $("#score").text(score)
+  $("#totalScore").text(score)
    //loop only through those radio where name is same
    $("#"+quesArray[currentQues]+" input[type=radio]").each(function() {
      //if not selected
@@ -83,6 +81,7 @@ $("#start").click(function(){
         $("#" + quesArray[nextQues]).addClass("questions-1")
         currentQues = nextQues;
        }
+     
 
  })
 
@@ -101,9 +100,9 @@ $("#start").click(function(){
 for(var i = 0; i < highScores.length; i++){
     var name = highScores[i].initials
     var playerScore = highScores[i].score
-    var scoreBoardEntry = "<li>" + name + " : " + playerScore +"</li>"
+    var scoreBoardEntry = "<li>INITIALS: " + name + " : SCORE: " + playerScore +"</li>"
     $(".scoreboard").append(scoreBoardEntry)
-
+$("#score_title").removeClass("questions");
 
    
 }
@@ -115,12 +114,13 @@ $(".scoreboard").removeClass("questions")
 
  $("#goback_btn").click(function(){
      console.log(highScores)
+     $("#score_title").addClass("questions")
     $(".qg_box2").addClass("questions")
     $(".qg_box1").removeClass("questions")
     clearInterval(timer)
     quesArray = ["q1", "q2", "q3", "q4", "q5"];
     score = 0;
-    totalTime = 120;
+    totalTime = 90;
     firstQues = Math.floor(Math.random() * quesArray.length);
     currentQues = firstQues;
     $(".scoreboard").addClass("questions")

@@ -130,3 +130,12 @@ body {
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
+
+.initials {
+    margin: auto;
+  display: block;
+}
+#submit {
+    margin: auto;
+    display: block;
+}
