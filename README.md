@@ -1,6 +1,8 @@
 
 # code-quiz-week4
-![sailor-moon](https://user-images.githubusercontent.com/50894080/125025374-6b1fc780-e037-11eb-97c7-63e915ddf4de.jpg)
+
+![Code-Quiz-Picture](https://user-images.githubusercontent.com/50894080/125025603-d1a4e580-e037-11eb-9505-6953104580de.jpg)
+
 
 Objective:
 GIVEN I am taking a code quiz <br>
