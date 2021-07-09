@@ -17,8 +17,8 @@ THEN the game is over<br>
 WHEN the game is over<br>
 THEN I can save my initials and my score<br>
 
-<h2>Experience:</h2><br>
-This was an extremely hard assignment. I learned to use a lot of JQuery and there was a lot of trial and error to make my code work. Overall, I learned a lot about the logic for javascript. 
+<h2>Experience:</h2>
+This was an extremely hard assignment. It was extremely frustrating getting the game to work the way I want it to. I learned to use a lot of JQuery and there was a lot of trial and error to make my code work. Overall, the assignment helped me practice a lot of what I learned in class. There were certain things I wasn't sure about but after creating this game, it helped me understand a bit better.
 
 <h2>Live Website Link</h2>
 https://tlthao.github.io/code-quiz-week4/
